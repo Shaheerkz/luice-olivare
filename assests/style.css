@@ -14,6 +14,11 @@
 
 
 /* @media (min-width:1600px){ */
+
+html{
+    overflow-x: hidden;
+}
+
     .head-sec {
         background-color: #FCEBD5;
         padding: 0 9px;
@@ -185,7 +190,7 @@
     
     
     .banner{
-        background-image: url(/assests/images/Home\ page.png);
+        background-image: url(./images/Home\ page.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -208,7 +213,7 @@
         top: 44px;
         position: relative;
         position: relative;
-        background-image: url(/assests/images/frame.png);
+        background-image: url(./images/frame.png);
         background-size: 20rem 16rem;
         background-position: center;
         background-repeat: no-repeat;
@@ -268,7 +273,7 @@
         top: 44px;
         position: relative;
         position: relative;
-        background-image: url(/assests/images/frame.png);
+        background-image: url(./images/frame.png);
         background-size: 20rem 16rem;
         background-position: center;
         background-repeat: no-repeat;
@@ -372,7 +377,7 @@
     }
     .footer-content p {
         font-family: 'Montessrat', sans-serif;
-        font-size: 22px;
+        font-size: 15px;
         font-weight: 400;
         margin: 0;
         color: #3B3B3B;
@@ -383,10 +388,10 @@
         justify-content: space-between;
         gap: 10px;
     }
-    .icon-1 i{
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
+    .icon-1 i {
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -406,42 +411,80 @@
     
 /* ---------------------------------------------------------------------Responsive Style Css Area----------------------------------------------- */
 
-@media (min-width:1601px){
-	.text-area {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 280px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    top: 44px;
-    position: relative;
-    position: relative;
-    background-image: url(/assests/images/frame.png);
-    background-size: 20rem 16rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 0px;
-    left: 80px;
-}
-.book-area {
-    top: 76px;
-    right: 135px;
-}
-.book-stand {
-    margin: 0 auto;
-    width: 450px;
-    height: 194px;
-}
+@media (max-width:1920px){
+    .text-area {
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+        height: 366px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 44px;
+        position: relative;
+        position: relative;
+        background-image: url(./images/frame.png);
+        background-size: 27rem 22rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0px;
+        left: 34px;
+    }
+    .book-area {
+        top: 76px;
+        right: -2px;
+    }
+    .book-stand {
+        margin: 0 auto;
+        width: 551px;
+        height: 243px;
+    }
 .book-area .top-book {
 
     top: -130px;
-    right: -70px;
+    right: 0px;
 }
 .banner {
-    padding: 250px 0;
+    padding: 200px 0;
 }
+}
+@media (max-width:1600px){
+    .text-area{
+        width: 339px;
+        background-size: 20rem 22rem;   
+    }
+    .book-stand{
+        width: 411px;
+        height: 217px;
+    }
+}
+@media (max-width:1366px){
+	.text-area{
+    width: 470px;
+	background-size: 27rem 16rem;
+    }
+    .book-stand {
+        width: 448px;
+    }
+    .banner {
+        padding: 120px 0;
+    }
+    .text-area {
+        width: 345px;
+        height: 308px;
+        background-size: 22rem 14rem;
+        top: 0;
+        left: 0;
+    }
+    .book-stand {
+        width: 393px;
+        height: 167px;
+    }
+    .book-area .top-book {
+        top: -102px;
+        right: 0px;
+        width: 93px;
+    }
 }
 @media (max-width:1366px) {
     .menu ul {
@@ -461,6 +504,9 @@
 .book-stand{
 	width: 290px;
     	height: 153px;
+}
+.menu ul li a {
+    font-size: 12px;
 }
 }
 
@@ -507,7 +553,7 @@
 	font-size: 11px;
 }
 .menu ul li a {
-    font-size: 11px;
+    font-size: 10px;
 }
 }
 
